@@ -17,3 +17,18 @@ function areaQuadrado(lado) {
 // 5 é um argumento
 areaQuadrado(5);
 ```
+
+É possível que uma função tenha uma outra função como parâmetro.
+
+```js
+addEventListener('click', function(){console.log('Funcionou!')});
+```
+
+### Hoisting
+
+O javascript lê o seu arquivo inteiro e guarda todas as funções e variáveis na memória. Isso permite que uma chamada de função seja feita antes de onde ela está sendo declarada.
+
+```js
+fazerConsole("Isso funciona!");
+function fazerConsole(texto) console.log(texto);
+```
