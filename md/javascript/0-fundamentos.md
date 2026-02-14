@@ -4,8 +4,6 @@
 
 Variáveis são usadas para armazenar valores na memória.
 
-### Sintaxe
-
 ``` js
 var cidade = "Rio de Janeiro";
 let nome = "Martiniano";
@@ -41,6 +39,17 @@ const pessoa = {};
 ```
 
 `Undefined` aparece quando uma variável não tem valor.
+
+###
+
+## Operadores
+
+```js
+let x;
+x = 10; // x é igual a 10! Recebeu o valor.
+x == 10; // x é igual a 10? Comparando o valor.
+x === 10; // verifica estritamente se é igual no valor e no tipo da variável.
+```
 
 ###
 
