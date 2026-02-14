@@ -66,3 +66,25 @@ if (n1 === 0) {
 
 if (!n1) console.log(false);
 ```
+
+###
+
+## Switch - Case
+
+```js
+const cor = red;
+
+switch (cor) {
+    case 'black':
+        console.log("olhe para o céu.");
+        break;
+    case 'Amarelo':
+        console.log("Vamos andar de bike");
+        break;
+    case 'red':
+        console.log("Você acertou");
+        break;
+    default
+        console.log("Valor default");
+}
+```
