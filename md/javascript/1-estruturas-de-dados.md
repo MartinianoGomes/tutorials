@@ -32,3 +32,27 @@ O javascript lê o seu arquivo inteiro e guarda todas as funções e variáveis 
 fazerConsole("Isso funciona!");
 function fazerConsole(texto) console.log(texto);
 ```
+
+###
+
+## Objetos
+
+- `Propriedades` são variáveis de um objeto.
+- `Métodos` são funções de um objeto.
+
+```js
+const pessoa = {
+    nome: 'Martiniano',
+    idade: '21',
+    profissao: 'estudante',
+    dizerOi: function() {return 'oi'},
+    funcaoReduzida() {return 'Podemos fazer uma função dessa forma também!'},
+
+    // Caso queira acessar as propriedades do próprio objeto, utilize this
+    acessando
+}
+
+pessoa.nome;
+pessoa.dizerOi();
+pessoa.funcaoReduzida();
+```
