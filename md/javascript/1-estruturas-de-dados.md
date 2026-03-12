@@ -56,3 +56,41 @@ pessoa.nome;
 pessoa.dizerOi();
 pessoa.funcaoReduzida();
 ```
+
+###
+
+## Arrays e Loops
+
+Arrays possuem vários métodos e propriedades a serem explorados.
+
+```js
+.pop() // Remove o último item e o retorna
+.push() // Adiciona ao final do array
+.lengt // Retorna a soma de todos os items do array
+.map() // Retorna um novo Array com os lementos modificados por seu código
+.reduce() // Retorna um único elemento após a execução do seu código
+.forEach() // Método que executa uma função para cada item de um Array
+```
+
+Exemplo .forEach()
+
+```js
+var frutas = ['Banana', 'Pera', 'Maçã', 'Abacaxi'];
+
+frutas.forEach(function(fruta, index, array)) {
+    console.log(fruta, index, array);
+}
+
+// "fruta" é o item dentro do Array
+// "index" é o index da posição dentro do array
+// "array" é o próprio array
+```
+
+Operador ternário
+
+```js
+var idade = 18;
+var naoPossuiDiabetes = true;
+
+const podeBeber = (idade < 18 && naoPossuiDiabetes) ? "Não pode beber" : "Pode beber";
+```
