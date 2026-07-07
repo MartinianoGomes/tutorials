@@ -2,6 +2,8 @@
 
 O `Angular` é um framework web que siponibiliza um ambiente completo para desenvolvimento de aplicações robustas. Mantido pela equipe do Google. OBS.: `Programação Orientada a Objetos`.
 
+O Angular funciona regido pelo modelo de aplicação SPA - Single Page Aplication. Em outras palavras, uma página requisita e renderiza todos os componentes de navegação formando apenas uma página. A manipulação acontece inteiramente pelo Javascript.
+
 ## Guia de Instalação do Angular
 
 Para instalar-se o Angular, é necessário ter instalado o Node em sua máquina.
@@ -30,6 +32,19 @@ ng new nome-do-meu-projeto
 
 - SSR - O HTML é criado dinamicamente no servidor a `cada requisição` do usuário, garantindo dados sempre atualizados.
 - SSG - O HTML é pré-gerado uma única vez durante o `tempo de build` e servido como arquivos estáticos, resultando em carregamento mais rápido.
+
+## Arquivos do projeto
+
+- app/app.config.ts - Arquivo de configuração que diz como os componentes serão renderizados, quais providers serão utilizados.
+    - provideZoneChangeDetection - Detecta mudanças para renovar a renderização.
+    - priveRouter - Provê as rotas de acordo com o arquivo de rotas.
+- app/app.routes.ts - Arquivo de configuração e mapeamento das rotas da aplicação.
+
+## Arquivos globais da aplicação
+
+- styles.css - Arquivo de estilização global do projeto
+- main.ts - Arquivo entrypoint da aplicação, bootstrap da aplicação. Esse arquivo que chama o componente renderizador da página
+- index.html - Arquivo renderizador da página e de todos os componentes da página.
 
 ## Arquivos de configuração
 
