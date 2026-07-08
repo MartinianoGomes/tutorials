@@ -17,7 +17,12 @@ export const routes: Routes = [
     {
         path: "", // Raíz do domínio
         component: HomeComponent
+    },
+    {
+        path: "home",
+        component: HomeComponent
     }
 ];
 ```
 `app.routes.ts`
+
