@@ -1,8 +1,8 @@
 # Informações Gerais
 
-O `Angular` é um framework web que siponibiliza um ambiente completo para desenvolvimento de aplicações robustas. Mantido pela equipe do Google. OBS.: `Programação Orientada a Objetos`.
+O `Angular` é um framework web que disponibiliza um ambiente completo para desenvolvimento de aplicações robustas. Mantido pela equipe do Google. OBS.: `Programação Orientada a Objetos`.
 
-O Angular funciona regido pelo modelo de aplicação SPA - Single Page Aplication. Em outras palavras, uma página requisita e renderiza todos os componentes de navegação formando apenas uma página. A manipulação acontece inteiramente pelo Javascript.
+O Angular funciona regido pelo modelo de aplicação `SPA - Single Page Aplication`. Em outras palavras, apenas um arquivo HTML (`index.html`) é carregado pelo navegador, e os componentes são manipulados e renderizados dinamicamente via JavaScript/TypeScript para trocar o conteúdo da tela sem recarregar a página.
 
 ## Guia de Instalação do Angular
 
