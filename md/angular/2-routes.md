@@ -26,3 +26,10 @@ export const routes: Routes = [
 ```
 `app.routes.ts`
 
+## O Marcador `<router-outlet>`
+
+Para que as rotas funcionem visualmente, utiliza-se a tag `<router-outlet>` no template do componente principal (normalmente o `app.component.html`). Essa tag funciona como um **espaço reservado** ou "output": é exatamente nesse local que o Angular irá injetar e mostrar o componente associado à rota que o usuário acessou no momento.
+
+## Configuração e Provedores
+
+Para que o sistema de roteamento seja ativado na aplicação, o Angular utiliza um módulo ou provedor específico. No arquivo de configuração global (`app.config.ts`), deve-se injetar o `providerRouter`, passando para ele as rotas que foram definidas no arquivo de mapeamento.
