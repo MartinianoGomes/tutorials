@@ -40,13 +40,13 @@ ng new nome-do-meu-projeto
 
 ## Arquivos globais da aplicação
 
-- styles.css - Arquivo de estilização global do projeto
-- main.ts - Arquivo entrypoint da aplicação, bootstrap da aplicação. Esse arquivo que chama o componente renderizador da página
+- styles.css - Arquivo de estilização global do projeto.
+- main.ts - Arquivo entrypoint da aplicação, bootstrap da aplicação. Esse arquivo que chama o componente renderizador da página.
 - index.html - Arquivo renderizador da página e de todos os componentes da página.
 
 ## Arquivos de configuração
 
-- angular.json - Este arquivo guarda configurações do projeto Angular. Build, Serve, Testes unitários
-- tsconfig.json - Configuração do Typescript, configuração global do Typescript
-- tsconfig.app.json - Configurações referentes à aplicação
-- tsconfig.spec.json - Configurações referentes aos testes unitários da aplicação
+- angular.json - Este arquivo guarda configurações do projeto Angular. Build, Serve, Testes unitários.
+- tsconfig.json - Configuração do Typescript, configuração global do Typescript.
+- tsconfig.app.json - Configurações referentes à aplicação.
+- tsconfig.spec.json - Configurações referentes aos testes unitários da aplicação.

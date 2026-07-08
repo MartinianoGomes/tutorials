@@ -15,7 +15,7 @@ ng generate component components/home
 
 ## Estrutura dos Componentes
 
-- home/home.component.css - Arquivo que contém todas as estilizações CSS do compoente
+- home/home.component.css - Arquivo que contém todas as estilizações CSS do compoente.
 - home/home.component.html - Arquivo que contém a construção em HTML do componente, ou seja, as tags html desse componente.
 - home/home.component.spec - Arquivo de testes unitários para garantir o funcionamento da lógica. Verifica se está renderizando ou se o componente não está quebrado.
 - home/home.component.ts - Arquivo que representa o componente e o faz visível para a aplicação Angular. Esse arquivo contém a lógica, dinamicidade, dados (estados) e comportamentos do componente. Dentro desse arquivo contém um `decorator` que indica um componente e como ele será selecionado ou quais os arquivos de estilização ou o arquivo html dele.
@@ -37,9 +37,9 @@ Esse decorador `@Component`, que fica acima da classe, faz com que o Angular rec
 
 ### Descrição dos Metadados
 
-- `selector`: "tag" personalizada (ex.: `<app-home></app-home>`) que invoca esse componente dentro de outros arquivos html
-- `templateUrl` e `styleUrls`: Mapeiam os arquivos de estrutura e estilo que pertecem àquele componente
-- `standalone`: Indica que o componente é independente e não precisa estar contido em um módulo tradicional, permitindo que ele gerencie seus próprios imports e de outras ferramentas e componentes
+- `selector`: "tag" personalizada (ex.: `<app-home></app-home>`) que invoca esse componente dentro de outros arquivos html.
+- `templateUrl` e `styleUrls`: Mapeiam os arquivos de estrutura e estilo que pertecem àquele componente.
+- `standalone`: Indica que o componente é independente e não precisa estar contido em um módulo tradicional, permitindo que ele gerencie seus próprios imports e de outras ferramentas e componentes.
 
 ## Utilização de um Componente
 
