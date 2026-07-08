@@ -11,7 +11,7 @@ Repositório com anotações e estudos práticos.
 
 ## Angular
 
-| Assunto                                                | Descrição                    |
-| ------------------------------------------------------ | ---------------------------- |
-| [Informações Gerais](./md/angular/0-informacoes-gerais.md.md) | Informações, conceito |
-|                                                        |                              |
+| Assunto                                                       | Descrição                         |
+| ------------------------------------------------------------- | --------------------------------- |
+| [Informações Gerais](./md/angular/0-informacoes-gerais.md.md) | Informações, conceito, instalação |
+| [Fundamentos](md/angular/1-fundamentos.md)                    | Sintaxe, components               |
