@@ -19,4 +19,16 @@ A interação entre a lógica (TypeScript) e a interface (HTML) ocorre através 
     - Para atributos não nativos ou de acessibilidade (como `aria-label` ou `data-*`) usa-se o prefixo `attr.` (Ex.: `[attr.aria-label]="meuTitulo"`).
 - **Event Binding ( `( )` )**: Usado para **reagir a eventos** do usuário, como cliques em botões.
     - A sintaxe utiliza parênteses em volta do evento: `(click)="minhaFuncao()"`.
-    - É possível capturar o contexto do evento (como a posição do mouse ou dados de formulário) passando o parâmetro especial `&event` para a função.
+    - É possível capturar o contexto do evento (como a posição do mouse ou dados de formulário) passando o parâmetro especial `$event` para a função.
+
+# Comunicação de Dados entre Componentes
+
+- `@Imput()` **(Pai para Filho)**: Permite que um componente receba dados externos. No componente filho, decora-se um atributo com `@Input()`; o componente pai, então, "injeta" o valor através de colchetes no HTML (Ex.: `[nome]="valor"`).
+- `@Output()` e `EventEmitter` **(Filho para Pai)**: Usado quando o componente filho precisa enviar dados para o pai.
+    - O filho cria um emissor de eventos **(`EventEmitter`)** e "emite" uma informação em um determinado momento (como um clique).
+    - O pai escuta esse evento usando a sintaxe de parênteses, como se fosse um evento nativo do HTML.
+
+```
+<button (click)="submit($event)">Clique aqui</button>
+```
+`home.component.html`
