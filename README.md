@@ -16,4 +16,5 @@ Repositório com anotações e estudos práticos.
 | [Informações Gerais](./md/angular/0-informacoes-gerais.md.md)                      | Informações, conceito, instalação        |
 | [Components](md/angular/1-fundamentos.md)                                          | Sintaxe, components                      |
 | [Estados e Manipulação de Dados](./md/angular/3-estados-e-manipulacao-de-dados.md) | Estados, manipulação e exibição de dados |
-| [Loops e Condicionais](./md/angular/4-loops-e-condicionais.md)                     | @if, @else, @for |
+| [Loops e Condicionais](./md/angular/4-loops-e-condicionais.md)                     | @if, @else, @for                         |
+| [Services](md/angular/5-services.md)                                               | Criação, @Injectable, @Inject |
