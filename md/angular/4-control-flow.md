@@ -1,6 +1,6 @@
-# Flow Control
+# Control Flow | Condicionais e Loops
 
-No Angular, `loops` e `condicionais` são ferramentas de controle de fluxo que permitem manipular o que é exibido no HTML com base na lógica do TypeScript. Também conhecido como `Flow Control`.
+No Angular, `loops` e `condicionais` são ferramentas de controle de fluxo que permitem manipular o que é exibido no HTML com base na lógica do TypeScript. Também conhecido como `Control FLow`.
 
 Obs.: Nas versões mais recentes do Framework, foi instroduzida uma nova sintaxe (chamada de *Control Flow*) que utiliza o símbolo `@` para tornar o código mais limpo e intuitivo.
 
