@@ -1,6 +1,6 @@
 # Loops e Condicionais
 
-No Angular, `loops` e `condicionais` são ferramentas de controle de fluxo que permitem manipular o que é exibido no HTML com base na lógica do TypeScript.
+No Angular, `loops` e `condicionais` são ferramentas de controle de fluxo que permitem manipular o que é exibido no HTML com base na lógica do TypeScript. Também conhecido como `Flow Control`.
 
 Obs.: Nas versões mais recentes do Framework, foi instroduzida uma nova sintaxe (chamada de *Control Flow*) que utiliza o símbolo `@` para tornar o código mais limpo e intuitivo.
 
@@ -50,7 +50,20 @@ Os loops são usados para repetir um elemento HTML várias vezes, geralmente par
 export class HomeComponent {
     name = "Julia"
     deveMostrarTitulo = true;
-    listItems = ["Maçã", "Uva", "Laranja"];
+    listItems = [
+        {
+            id: 0,
+            nome: "Maçã"
+        },
+        {
+            id: 1,
+            nome: "Laranja"
+        },
+        {
+            id: 2,
+            nome: "Abacaxi"
+        }
+    ];
 }
 ```
 `home.component.ts`
@@ -58,7 +71,7 @@ export class HomeComponent {
 ### Nova sintaxe
 
 ```
-@for (item of listItems; track item) {
+@for (item of listItems; track item.id) {
     <p>{{item}}</p>
 }
 ```
