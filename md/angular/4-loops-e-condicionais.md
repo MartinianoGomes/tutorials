@@ -1,4 +1,4 @@
-# Loops e Condicionais
+# Flow Control
 
 No Angular, `loops` e `condicionais` são ferramentas de controle de fluxo que permitem manipular o que é exibido no HTML com base na lógica do TypeScript. Também conhecido como `Flow Control`.
 
@@ -83,3 +83,37 @@ export class HomeComponent {
 <p *ngFor="let item of listItems">{{item}}</p>
 ```
 `home.component.html`
+
+## Switch Case
+
+O controle de fluxo por Switch Case é utilizado para alternar entre múltiplos blocos baseados em um valor. Por exemplo:
+
+```
+@switch (deveMostrarTitulo) {
+    @case (true) {
+        <h1>Meu título</h1>
+    }
+    @default {
+        <p>Não tem título</p>
+    }
+}
+```
+`home.component.html`
+
+Agora, um exemplo mais concreto:
+
+```
+@switch (user.role) {
+    @case ('user') {
+        <p>Bem vindo, {{user.name}}!</p>
+    }
+    @case ('moderator) {}
+    @case ('admin') {
+        <p>Bem vindo!</p>
+    }
+    @defalut {
+        <p>Bem vindo, visitante!</p>
+    }
+}
+```
+dashboard.component.html
