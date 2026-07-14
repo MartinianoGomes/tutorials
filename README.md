@@ -16,5 +16,6 @@ Repositório com anotações e estudos práticos.
 | [Informações Gerais](./md/angular/0-informacoes-gerais.md.md)                      | Informações, conceito, instalação        |
 | [Components](md/angular/1-fundamentos.md)                                          | Sintaxe, components                      |
 | [Estados e Manipulação de Dados](./md/angular/3-estados-e-manipulacao-de-dados.md) | Estados, manipulação e exibição de dados |
-| [Control Flow](./md/angular/4-control-flow.md.md)                     | @if, @else, @for, @switch                        |
-| [Services](md/angular/5-services.md)                                               | Criação, @Injectable, @Inject |
+| [Control Flow](./md/angular/4-control-flow.md.md)                                  | @if, @else, @for, @switch                |
+| [Services](md/angular/5-services.md)                                               | Criação, @Injectable, @Inject            |
+| [Requisições HTTP](md/angular/6-requisicoes-http.md)                               | Requisições, fazer e receber, tratar |
