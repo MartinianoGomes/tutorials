@@ -19,4 +19,4 @@ Repositório com anotações e estudos práticos.
 | [Control Flow](md/angular/4-control-flow.md.md)                                  | @if, @else, @for, @switch                |
 | [Services](md/angular/5-services.md)                                             | Criação, @Injectable, @Inject            |
 | [Requisições HTTP](md/angular/6-requisicoes-http.md)                             | Requisições, fazer e receber, tratar     |
-| [Forms](md/angular/7-forms.md)                                                                            | Template-Driven, Reactive                |
+| [Forms](md/angular/7-forms.md)                                                   | Template-Driven, Reactive, FormBuilder, FormArray                |
