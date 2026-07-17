@@ -59,3 +59,51 @@ export class MeuFormularioComponent {
 </form>
 ```
 `meu-formulario.html`
+
+## Reactive Forms
+
+- Abordagem mais robusta e escaável.
+- Lógica fica no TypeScript.
+- HTML mais limpo.
+- Recomendada para formulários complexos, testes e formulários dinâmicos.
+
+**Setup**: importe `ReactiveFormsModule`.
+
+```
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+
+@Component({
+    standalone:true,
+    imports: [ReactiveFormsModule],
+    // ...
+})
+export class MeuFormularioComponent {
+    meuForm = new FormGroup({
+        nome: new FormControl('', [Validators.required, Validators.minLenght(3)]),
+        email: new FormControl('', [Validators.required, Validators.email]),
+    });
+
+    onSubmit() {
+        console.log(this.meuForm.value);
+    }
+}
+```
+`meu-formulario.ts`
+
+```
+<form [formGroup]="meuForm" (ngSubmit)="onSubmit()">
+    <input formControlName="nome" />
+
+    @if (meuForm.get('nome')?.invalid && meuForm.get('nome')?.touched) {
+        <div>
+            Nome é obrigatório (mín. 3 caracteres)
+        </div>
+    }
+
+    <input formControlName="email" />
+
+    <button [disabled]="meuForm.invalid">Enviar</button>
+</form>
+```
+`meu-formulario.html`
