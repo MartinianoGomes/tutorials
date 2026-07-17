@@ -117,6 +117,8 @@ export class MeuFormularioComponent {
 
 ## Usando FormBuilder (mais limpo)
 
+É possível utilizar o FormBuilder para desenvolver o formulário. Isso deixa o código mais limpo.
+
 ```
 import { FormBuilder, Validators } from '@angular/forms';
 
@@ -130,3 +132,37 @@ export class MeuFormularioComponent {
 }
 ```
 `meu-formulario.ts`
+
+## FormArray (listas dinâmicas)
+
+Útil quando você precisa de um número variável de campos, como uma lista de telefones.
+
+```
+import { FormArray } from '@angular/forms';
+
+meuForm = this.formBuilder.group({
+    telefones: this.formBuilder.array([
+        this.formBuilder.control('')
+    ])
+});
+
+get telefones() {
+    return this.meuForm.get('telefones') as FormArray;
+}
+
+adicionarTelefone() {
+    this.telefones.push(this.formBuilder.control(''));
+}
+```
+`meu-formulario.ts`
+
+```
+<div formArrayName="telefones">
+    <div *ngFor="let telefone of telefones.controls; let i = index">
+        <input [formControlName]="i" />
+    </div>
+</div>
+
+<button type="button" (click)="adicionarTelefone()">Adicionar telefone</button>
+```
+`meu-formulario.html`
