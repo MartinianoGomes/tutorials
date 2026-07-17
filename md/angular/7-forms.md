@@ -1,6 +1,13 @@
 # Forms
 
-O Angular oferece duas abordagens para trabalhar com formulários: [`Template-Driven Forms`](#template-driven-forms) (formulários orientados por template) e [`Reactive Forms`](#reactive-forms) (formulários reativos).
+O Angular oferece duas abordagens para trabalhar com formulários: `Template-Driven Forms` (formulários orientados por template) e `Reactive Forms`.
+
+## Índice
+
+- [Template-Driven Forms](#template-driven-forms)
+- [Reactive Forms](#reactive-forms)
+- [FormBuilder](#usando-formbuilder-mais-limpo)
+- [FormArray](#formarray-listas-dinâmicas)
 
 ## Template-Driven Forms
 
@@ -107,3 +114,19 @@ export class MeuFormularioComponent {
 </form>
 ```
 `meu-formulario.html`
+
+## Usando FormBuilder (mais limpo)
+
+```
+import { FormBuilder, Validators } from '@angular/forms';
+
+export class MeuFormularioComponent {
+    private formBuilder = inject(FormBuilder);
+
+    meuForm = this.formBuilder.group({
+        nome: ['', [validators.required, Validators.minLenght(3)]],
+        email: ['', [Validators.required, Validators.email]],
+    })
+}
+```
+`meu-formulario.ts`
