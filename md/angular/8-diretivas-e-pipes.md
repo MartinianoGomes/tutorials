@@ -35,3 +35,32 @@ Os Pipe Operators são recursos para trabalhar com dados. Aceitam um valor de en
 - CurrencyPipe: Transforma um número para uma string de moeda.
 - DecimalPipe: Transforma um número numa string com um ponto decimal.
 - PercentPipe: Tranforma um número para uma string percentual.
+
+### Pipes Customizados
+
+O Angular permite criar e customizar pipes para mais variações de tranformação e formas de trabalhar os dados.
+
+Para criar um pipe, basta rodar o comando:
+
+```
+npx ng generate pipe <nomedopipe>
+```
+
+Exemplo prático:
+
+```
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'stringInverter',
+})
+export class StringInverterPipe implements PipeTransform {
+  nvalue: string | null = null;
+
+  transform(value: any, ...args: unknown[]): unknown {
+    this.nvalue = value.split('').reverse().join('');
+    return this.nvalue;
+  }
+}
+```
+`string-inverter-pipe.ts`
