@@ -1,6 +1,8 @@
 # Diretivas e Pipes
 
-As `Diretivas` podem realizar diversas funções no sistema, **como aplicar estilos a um elemento, aplicar classes css a um elemento, etc**.
+As [`Diretivas`](#diretivas) podem realizar diversas funções no sistema, **como aplicar estilos a um elemento, aplicar classes css a um elemento, etc**. Já os [`Pipes`](#pipes), são ferramentas para trabalhar com d**ados no templade do componente**.
+
+A maioria das diretivas e pipes já vem importada junto com o `CommonModule`.
 
 ## Diretivas
 
@@ -14,8 +16,6 @@ Exemplo prático:
 </h2>
 ```
 `componente-generico.html`
-
-Para utilizar a diretiva, é necessário importá-la dentro do Imports do arquivo .ts do componente.
 
 ## Pipes
 
