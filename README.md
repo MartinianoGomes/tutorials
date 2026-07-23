@@ -20,3 +20,4 @@ Repositório com anotações e estudos práticos.
 | [Services](md/angular/5-services.md)                                             | Criação, @Injectable, @Inject                     |
 | [Requisições HTTP](md/angular/6-requisicoes-http.md)                             | Requisições, fazer e receber, tratar              |
 | [Forms](md/angular/7-forms.md)                                                   | Template-Driven, Reactive, FormBuilder, FormArray |
+| [Diretivas e Pipes](md/angular/8-diretivas-e-pipes.md)                           | Como funcionam, como usar |
